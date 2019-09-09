@@ -1,0 +1,13 @@
+sides = input('Enter the number of sides: ');
+length = input('Enter the length of the sides: ');
+diagonals = (sides*(sides-3))/2;
+perimeter = sides*length;
+apothem = length/(2*tan((pi/sides)));
+area = 1/2 * perimeter * apothem;
+radius = sqrt(apothem^2 + (length/2)^2);
+
+fprintf('The Apothem is %.4f \n', apothem)
+fprintf('The Area of the polygon is %.4f \n', area)
+fprintf('The Perimeter of the polygon is %.4f \n',perimeter)
+fprintf('The Diagonals of the polygon is %.4f \n',diagonals)
+fprintf('The Radius of the circumscribed circle is %.4f \n',radius)
